@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@mipmap/phone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="369dp"
+        android:layout_height="226dp"
+        android:layout_below="@+id/calling_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="77dp" />
+
+    <Button
+        android:id="@+id/sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add"
+        android:layout_alignEnd="@+id/DialImmediately"
+        android:layout_alignRight="@+id/DialImmediately"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:text="sleep"
+        android:textSize="13dp" />
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cancel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="147dp"
+        android:text="add contact"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/calling_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="14dp"
+
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_toEndOf="@+id/add"
+        android:layout_toRightOf="@+id/add"
+        android:text="call duration"
+        android:textSize="12dp" />
+
+
+    <Button
+        android:id="@+id/btn_phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginRight="256dp"
+        android:layout_marginBottom="13dp"
+        android:text="Dial" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/btn_phone2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:text="cancel" />
+
+    <Switch
+        android:id="@+id/LogCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recycle_view"
+        android:layout_alignLeft="@+id/recycle_view"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="74dp"
+        android:text="Log Calls" />
+
+    <Switch
+        android:id="@+id/DialImmediately"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:text="Dial immediately" />
+
+    <Switch
+        android:id="@+id/Call24x7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recycle_view"
+        android:layout_alignLeft="@+id/recycle_view"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="111dp"
+        android:text="Call 24x7" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_alignStart="@+id/LogCalls"
+        android:layout_alignLeft="@+id/LogCalls"
+        android:layout_alignTop="@+id/imageView"
+        android:background="@drawable/ic_access_time_24dp" />
+
+</RelativeLayout>
